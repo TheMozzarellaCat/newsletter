@@ -1,0 +1,321 @@
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.newsletter-container {
+  height: 100vh;
+  width: 100%;
+}
+.newsletter-container .image-container {
+  height: 30vh;
+  width: 100%;
+  background-image: url(/assets/images/illustration-sign-up-mobile.svg);
+  background-repeat: no-repeat;
+}
+.newsletter-container .info-container {
+  width: 100%;
+  height: auto;
+  padding: 2vh;
+  box-sizing: border-box;
+}
+.newsletter-container .info-container .info-title {
+  color: hsl(234, 29%, 20%);
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 2vh;
+}
+.newsletter-container .info-container .additional-info {
+  color: hsl(235, 18%, 26%);
+  margin-bottom: 2vh;
+}
+.newsletter-container .info-bullet-points-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 16vh;
+}
+.newsletter-container .info-bullet-points-container .bullet-point {
+  display: flex;
+  align-items: flex-start;
+  color: hsl(235, 18%, 26%);
+}
+.newsletter-container .info-bullet-points-container .bullet-point img {
+  margin-right: 2vh;
+}
+.newsletter-container form {
+  padding: 2vh;
+  box-sizing: border-box;
+}
+.newsletter-container form .email-label {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  font-size: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.newsletter-container form .email-label span {
+  color: transparent;
+}
+.newsletter-container form .email-label .error-msg {
+  color: hsl(4, 100%, 67%);
+}
+.newsletter-container form .email-input-field {
+  width: 100%;
+  height: 5vh;
+  margin-top: 1.5vh;
+  border-radius: 6px;
+  border: 1px solid hsl(231, 7%, 60%);
+  padding-left: 2vw;
+  box-sizing: border-box;
+}
+.newsletter-container form .email-input-field:active {
+  border: 1px solid hsl(234, 29%, 20%);
+}
+.newsletter-container form .active {
+  background-color: hsla(4, 100%, 67%, 0.151);
+  border: red 1px solid;
+}
+.newsletter-container form .active::placeholder {
+  color: hsl(4, 100%, 67%);
+}
+.newsletter-container form .submit-button {
+  background-color: hsl(234, 29%, 20%);
+  width: 100%;
+  height: 5vh;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 0px;
+  margin-top: 3vh;
+}
+.newsletter-container form .submit-button:active {
+  background: var(--gradient-stop-0);
+  background: linear-gradient(90deg, #FF6A3A 0%, #FF527B 100%);
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+}
+
+.succes-background {
+  height: 100vh;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.succes-background .thanking-message-background {
+  position: absolute;
+  top: 20vh;
+  padding-left: 2vh;
+  box-sizing: border-box;
+}
+.succes-background .thanking-message-background .check-icon {
+  width: 6vh;
+  height: 6vh;
+  background-size: cover;
+  background-image: url(/assets/images/icon-success.svg);
+}
+.succes-background .thanking-message-background .thanking-title {
+  color: hsl(234, 29%, 20%);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+.succes-background .dismiss-button {
+  position: absolute;
+  bottom: 5vh;
+  left: 5%;
+  left: 5%;
+  background-color: hsl(234, 29%, 20%);
+  width: 90%;
+  height: 5vh;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 0px;
+  margin-top: 3vh;
+}
+.succes-background .dismiss-button:active {
+  background: var(--gradient-stop-0);
+  background: linear-gradient(90deg, #FF6A3A 0%, #FF527B 100%);
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .newsletter-container {
+    height: 60vh;
+    width: 60%;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  .newsletter-container .image-container {
+    height: 55vh;
+    width: 48%;
+    background-image: url(/assets/images/illustration-sign-up-desktop.svg);
+    border-radius: 20px;
+  }
+  .newsletter-container .text-container {
+    width: 45%;
+    margin-right: 5%;
+  }
+  .newsletter-container .text-container .info-container {
+    width: 100%;
+    height: auto;
+    padding: 2vh;
+    box-sizing: border-box;
+  }
+  .newsletter-container .text-container .info-container .info-title {
+    color: hsl(234, 29%, 20%);
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 2vh;
+  }
+  .newsletter-container .text-container .info-container .additional-info {
+    color: hsl(235, 18%, 26%);
+    margin-bottom: 2vh;
+  }
+  .newsletter-container .text-container .info-bullet-points-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 16vh;
+  }
+  .newsletter-container .text-container .info-bullet-points-container .bullet-point {
+    display: flex;
+    align-items: flex-start;
+    color: hsl(235, 18%, 26%);
+  }
+  .newsletter-container .text-container .info-bullet-points-container .bullet-point img {
+    margin-right: 2vh;
+  }
+  .newsletter-container .text-container form {
+    padding: 2vh;
+    box-sizing: border-box;
+  }
+  .newsletter-container .text-container form .email-label {
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .newsletter-container .text-container form .email-label span {
+    color: transparent;
+  }
+  .newsletter-container .text-container form .email-label .error-msg {
+    color: hsl(4, 100%, 67%);
+  }
+  .newsletter-container .text-container form .email-input-field {
+    width: 100%;
+    height: 5vh;
+    margin-top: 1.5vh;
+    border-radius: 6px;
+    border: 1px solid hsl(231, 7%, 60%);
+    padding-left: 2vw;
+    box-sizing: border-box;
+  }
+  .newsletter-container .text-container form .email-input-field:active {
+    border: 1px solid hsl(234, 29%, 20%);
+  }
+  .newsletter-container .text-container form .active {
+    background-color: hsla(4, 100%, 67%, 0.151);
+    border: red 1px solid;
+  }
+  .newsletter-container .text-container form .active::placeholder {
+    color: hsl(4, 100%, 67%);
+  }
+  .newsletter-container .text-container form .submit-button {
+    background-color: hsl(234, 29%, 20%);
+    width: 100%;
+    height: 5vh;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 6px;
+    border: 0px;
+    margin-top: 3vh;
+  }
+  .newsletter-container .text-container form .submit-button:active {
+    background: var(--gradient-stop-0);
+    background: linear-gradient(90deg, #FF6A3A 0%, #FF527B 100%);
+    box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+  }
+  .succes-background {
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(235, 18%, 26%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  .succes-background .thanking-message-background {
+    position: absolute;
+    top: 25vh;
+    left: 30%;
+    height: 50vh;
+    width: 40%;
+    padding: 4vh 4%;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+  }
+  .succes-background .thanking-message-background .check-icon {
+    width: 6vh;
+    height: 6vh;
+    background-size: cover;
+    background-image: url(/assets/images/illustration-sign-up-desktop.svg);
+  }
+  .succes-background .thanking-message-background .thanking-title {
+    color: hsl(234, 29%, 20%);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+  .succes-background .thanking-message-background .thanking-message {
+    line-height: 24px;
+  }
+  .succes-background .dismiss-button {
+    position: absolute;
+    bottom: 30vh;
+    left: 34%;
+    background-color: hsl(234, 29%, 20%);
+    width: 32%;
+    height: 5vh;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 6px;
+    border: 0px;
+    margin-top: 3vh;
+  }
+  .succes-background .dismiss-button:active {
+    background: var(--gradient-stop-0);
+    background: linear-gradient(90deg, #FF6A3A 0%, #FF527B 100%);
+    box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
